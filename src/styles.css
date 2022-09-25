@@ -6,7 +6,7 @@ body {
 }
 
 .show-data {
-  widows: 100%;
+  width: 100%;
   background-color: #cfd8dc;
   margin: 20px;
   padding: 10px;
