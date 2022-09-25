@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  background-color: #eceff1;
+  font-family: "Roboto", sans-serif;
+}
+
+.show-data {
+  widows: 100%;
+  background-color: #cfd8dc;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 5px 10px #888888; /*help from https://www.w3schools.com/cssref/css3_pr_box-shadow.asp*/
+}
+.show-data > div h1 {
+  text-align: center;
+}
+
+img {
+  display: block;
+}
+
+.show-info {
+  width: 100%;
+}
+
+/*HElp from https://css-tricks.com/a-complete-guide-to-css-media-queries/*/
+@media screen and (min-width: 800px) {
+  .show-data {
+    display: flex;
+  }
+  .show-info {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  img {
+    margin: auto;
+  }
+  .show-data > div p {
+    text-align: center;
+    padding: 10px;
+  }
+}
